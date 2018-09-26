@@ -3,7 +3,7 @@ int score = 100;
 
 
 void setup() {
-	size(1000,800);
+	size(1000,700);
 	for(int i = 0; i<bacts.length;i++){
 		bacts[i] = new Bacteria();
 	}
@@ -18,7 +18,7 @@ void draw() {
 		
 	}
 	textSize(100);
-	text(score,425,400);
+	text(score,425,350);
 	if(score < 0){
 		background((int)(Math.random()*100),(int)(Math.random()*100),(int)(Math.random()*100));
 		textSize(150);
