@@ -4,8 +4,8 @@ int score = 100;
 
 
 void setup() {
-	size(1200,900);
-	for(int i = 0; i<bacts.length;i++){
+	size(1200,750);
+	for(int i = 0; i < bacts.length;i++){
 		bacts[i] = new Bacteria();
 	}
 }
@@ -23,7 +23,7 @@ void draw() {
 	if(score < 0){
 		background((int)(Math.random()*100),(int)(Math.random()*100),(int)(Math.random()*100));
 		textSize(150);
-		text("Game Over",200,450);
+		text("Game Over",200,375);
 	}
 
 }
