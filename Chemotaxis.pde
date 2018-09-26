@@ -2,8 +2,9 @@ Bacteria[] bacts = new Bacteria[1000];
 int score = 100;
 
 
+
 void setup() {
-	size(1000,700);
+	size(1200,500);
 	for(int i = 0; i<bacts.length;i++){
 		bacts[i] = new Bacteria();
 	}
@@ -17,12 +18,12 @@ void draw() {
 		bacts[i].updateScore();
 		
 	}
-	textSize(100);
-	text(score,425,350);
+	textSize(50);
+	text("Life: " + score ,10,50);
 	if(score < 0){
 		background((int)(Math.random()*100),(int)(Math.random()*100),(int)(Math.random()*100));
 		textSize(150);
-		text("Game Over",100,400);
+		text("Game Over",200,300);
 	}
 
 }
@@ -34,10 +35,9 @@ class Bacteria{
 	
 
 	Bacteria() {
-		x = 250;
+		x = 600;
 		y = 250;
 		theColor = color((int)(Math.random() * 256),(int)(Math.random() * 256),(int)(Math.random() * 256));
-		
 		
 
 	}
