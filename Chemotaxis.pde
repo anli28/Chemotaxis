@@ -3,6 +3,7 @@ int score = 100;
 
 
 
+
 void setup() {
 	size(1200,750);
 	for(int i = 0; i < bacts.length;i++){
@@ -33,12 +34,12 @@ class Bacteria{
 	int y;
 	int theColor;
 	
+	
 
 	Bacteria() {
 		x = 600;
 		y = 250;
 		theColor = color((int)(Math.random() * 256),(int)(Math.random() * 256),(int)(Math.random() * 256));
-		
 
 	}
 	void move() {
@@ -63,7 +64,7 @@ class Bacteria{
 }
 	void updateScore() {
 		if(mouseX == x && mouseY == y) {
-    		score = score - 2;
+    		score = score - 5;
    
     }
 }
