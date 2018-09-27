@@ -5,7 +5,7 @@ int score = 100;
 
 
 void setup() {
-	size(1200,750);
+	size(1200,600);
 	for(int i = 0; i < bacts.length;i++){
 		bacts[i] = new Bacteria();
 	}
@@ -24,7 +24,7 @@ void draw() {
 	if(score < 0){
 		background((int)(Math.random()*100),(int)(Math.random()*100),(int)(Math.random()*100));
 		textSize(150);
-		text("Game Over",200,375);
+		text("Game Over",200,300);
 	}
 
 }
@@ -73,7 +73,7 @@ class Bacteria{
 
 	void show() {
 		fill(theColor);
-		ellipse(x,y,5,5);
+		ellipse(x, y, 5, 5);
 
 	}
 }
